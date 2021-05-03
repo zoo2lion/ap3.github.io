@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Easy Web TV：Watch m3u8 live stream</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Zhang Boheng">
+    <meta name="keywords" content="iptv, movie, github, online tv, web tv, series tv...">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    html,body{
+        background-image: url("images/bg.jpg");
+    }
+    #menu {
+        overflow-y: scroll !important;
+    }
+</style>
+<body>
+    <div id="left">
+        <h3>Select Series</h3>
+        <ul id="menu">
+            <li>
+                <p><a href="catalogues/auto.html">Auto</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/business.html">Business</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/classic.html">Classic</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/comedy.html">Comedy</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/documentary.html">Documentary</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/education.html">Education</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/entertainment.html">Entertainment</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/family.html">Family</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/fashion.html">Fasion</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/food.html">Food</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/general.html">General</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/health.html">Health</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/history.html">History</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/hobby.html">Hobby</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/kids.html">Kids</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/legislative.html">Legislative</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/lifestyle.html">Lifestyle</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/local.html">Local</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/movies.html">Movies</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/music.html">Music</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/news.html">News</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/other.html">Other</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/quiz.html">Quiz</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/religious.html">Religious</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/sci-fi.html">Sci-fi</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/shop.html">Shop</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/sport.html">Sport</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/travel.html">travel</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/weather.html">Weather</a></p>
+            </li>
+            <li>
+                <p><a href="catalogues/xxx.html">XXX</a></p>
+            </li>
+        </ul>
+    </div>
+    <div id="right">
+        <div id="div1">
+            <img src="images/index.png" />
+        </div>
+    </div>
+    <script>
+            let menuHeight = document.getElementById('menu');
+            let screenHeight = window.innerHeight;
+            menuHeight.style.height = screenHeight - 60 + "px";
+            $("#menu").css({ "overflow-y": "auto", "height": menuHeight });
+            $("li p").mouseover(function(){
+                $(this).children("a").css({"color":"#000"})
+            })
+            $("li p").mouseleave(function(){
+                $(this).children("a").css({"color":"#fff"})
+            })
+    </script>
+</body>
+
+</html>
